@@ -5,15 +5,22 @@ import commonjs from "@rollup/plugin-commonjs";
 export default {
   input: "src/index.ts",
   output: [
-    // {
-    //   file: "dist/bundle.js",
-    //   format: "cjs",
-    //   sourcemap: true,
-    // },
     {
-      file: "dist/index.js",
+      file: "dist/index.cjs.js",
+      format: "cjs",
+      sourcemap: true,
+    },
+    {
+      file: "dist/index.esm.js",
       format: "esm", // ES Modules
       sourcemap: true,
+    },
+
+    {
+      file: "dist/index.umd.js",
+      format: "umd",
+      sourcemap: true,
+      name: "dailyfns"
     },
   ],
   plugins: [

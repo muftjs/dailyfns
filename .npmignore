@@ -3,6 +3,9 @@
 **/webpack.config.js
 node_modules
 src
+jest.config.js
 webpack.config.ts
+rollup.config.ts
 tsconfig.json
 yarn.lock
+publishing.md

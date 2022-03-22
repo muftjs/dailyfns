@@ -3,7 +3,7 @@
  * @param obj Object
  * @returns bool - [TRUE | FALSE]
  */
- export default function isEmpty(obj): boolean {
+ export default function isObjEmpty(obj): boolean {
 	if (undefined == obj) return true;
 	for (var prop in obj) {
 		if (Object.prototype.hasOwnProperty.call(obj, prop)) return false;
