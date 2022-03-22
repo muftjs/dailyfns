@@ -1,0 +1,8 @@
+.*
+**/tsconfig.json
+**/webpack.config.js
+node_modules
+src
+webpack.config.ts
+tsconfig.json
+yarn.lock
